@@ -6,6 +6,7 @@ import java.util.Comparator;
 
 import lombok.Data;
 
+
 /**
  * Clase para identificar el equipo
  * @author hatashi
@@ -129,7 +130,7 @@ public class ClaseEquipo {
 	}
 
 	/**
-	 * Función de ordenar Anotadores
+	 * Funciï¿½n de ordenar Anotadores
 	 */
 	private void ordenarAnotadores() {
 		Comparator<ClaseJugador> comparator = new Comparator<ClaseJugador>() {
@@ -142,7 +143,7 @@ public class ClaseEquipo {
 	}
 
 	/**
-	 * Función de ordenar asistentes
+	 * Funciï¿½n de ordenar asistentes
 	 */
 	private void ordenarAsistentes() {
 		Comparator<ClaseJugador> comparator = new Comparator<ClaseJugador>() {
@@ -155,7 +156,7 @@ public class ClaseEquipo {
 	}
 
 	/**
-	 * Función de ordenar reboteadores
+	 * Funciï¿½n de ordenar reboteadores
 	 */
 	private void ordenarReboteadores() {
 		Comparator<ClaseJugador> comparator = new Comparator<ClaseJugador>() {

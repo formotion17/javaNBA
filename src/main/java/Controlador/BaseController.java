@@ -44,7 +44,7 @@ public class BaseController extends Atributos{
 	private static boolean temporadaPlayoff=false;
 	
 	// Alias Base Datos Colecciones
-	protected static String BASE_DATOS_NBA="nba";
+	protected static String BASE_DATOS_NBA="NBA";
 	protected static String COLECCIION_TIROS="tiros";
 	protected static String COLECCION_TOTALES="totales";
 	
@@ -58,7 +58,7 @@ public class BaseController extends Atributos{
 	protected static String ATRIBUTO_REGULAR="regular";
 	protected static String ATRIBUTO_PLAYOFF="playoff";
 	protected static String ATRIBUTO_CARRERA="carrera";
-	protected static String ATRIBUTO_PARTIDO="partido";
+	protected static String ATRIBUTO_PARTIDO="partidos";
 	protected static String ATRIBUTO_PTS="PTS";
 	protected static String ATRIBUTO_PF="PF";
 	protected static String ATRIBUTO_TOV="TOV";
@@ -97,7 +97,7 @@ public class BaseController extends Atributos{
 	private static ArrayList<String> listaJugadores = new ArrayList<String>();
 	
 	/**
-	 * Función que nos inserta un documento en la colección de la base de datos que le hayamos pasado
+	 * Funciï¿½n que nos inserta un documento en la colecciï¿½n de la base de datos que le hayamos pasado
 	 * @param document
 	 * @param collection
 	 */
@@ -206,7 +206,7 @@ public class BaseController extends Atributos{
 	}
 	
 	/**
-	 * Función que nos devuelve un numero formateado
+	 * Funciï¿½n que nos devuelve un numero formateado
 	 * @param a
 	 * @param b
 	 * @return
@@ -219,7 +219,7 @@ public class BaseController extends Atributos{
 	}
 	
 	/**
-	 * Función que nos devuelve un numero formateado a 3 decimales
+	 * Funciï¿½n que nos devuelve un numero formateado a 3 decimales
 	 * @param a
 	 * @param b
 	 * @return
@@ -230,7 +230,7 @@ public class BaseController extends Atributos{
 	}
 	
 	/**
-	 * Función para crear la conexión
+	 * Funciï¿½n para crear la conexiï¿½n
 	 * @return
 	 * @throws UnknownHostException
 	 */
@@ -242,7 +242,7 @@ public class BaseController extends Atributos{
 	}
 	
 	/**
-	 * Función que nos dice si el partido es de playOff o no
+	 * Funciï¿½n que nos dice si el partido es de playOff o no
 	 * @param listaPartidos
 	 */
 	public static void tienePlayOff(ArrayList<ClasePartido> listaPartidos) {
@@ -288,7 +288,7 @@ public class BaseController extends Atributos{
 	}
 	
 	/**
-	 * Función que nos rellena estadisticas del jugador
+	 * Funciï¿½n que nos rellena estadisticas del jugador
 	 * @param jugador
 	 * @param box
 	 */
@@ -312,7 +312,7 @@ public class BaseController extends Atributos{
 	}
 	
 	/**
-	 * Función que nos rellena estadisticas del jugador con la condición que nos suma partidos jugados
+	 * Funciï¿½n que nos rellena estadisticas del jugador con la condiciï¿½n que nos suma partidos jugados
 	 * @param jugador
 	 * @param box
 	 * @param i

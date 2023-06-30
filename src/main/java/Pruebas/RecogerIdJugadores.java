@@ -1,4 +1,4 @@
-package Funcion;
+package Pruebas;
 
 /**
  * Clase para recoger los distintos ID de jugador
@@ -25,7 +25,7 @@ import Utilidad.Util;
 public class RecogerIdJugadores extends BaseController{
 
 	public static void main(String[] args) throws UnknownHostException {
-		System.out.println("INICIAMOS LA APLICACIÓN PARA ERCOGER LOS DIFERENTES ID'S QUE HAY");
+		System.out.println("INICIAMOS LA APLICACIï¿½N PARA ERCOGER LOS DIFERENTES ID'S QUE HAY");
 		
 		// CONECTAMOS A MONGODB
 		MongoClient mongo = Util.crearConexion();
