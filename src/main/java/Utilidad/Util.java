@@ -12,13 +12,13 @@ import Controlador.BaseController;
 public class Util extends BaseController{
 	
 	/**
-	 * Función para recuperar todos los idJugadores que tenemos guardados en el archivo listaJugadoresIdNuevosBis.txt
+	 * Funciï¿½n para recuperar todos los idJugadores que tenemos guardados en el archivo listaJugadoresIdNuevosBis.txt
 	 * @return Devolvemos lista de los idJugadores
 	 * @throws IOException
 	 */
 	public static ArrayList<String> recogerJugadores() throws IOException{
 		ArrayList<String> listaJugadores = new ArrayList<>();
-		BufferedReader readerJugadores = new BufferedReader(new FileReader("E:/TFG/idJugadoresDistinct.txt"));
+		BufferedReader readerJugadores = new BufferedReader(new FileReader("/Users/formotion/tfg/java/archivos/idJugadores.txt"));
 	    String lineJugadores;
 	    while ((lineJugadores = readerJugadores.readLine()) != null)
 	    {
@@ -31,7 +31,7 @@ public class Util extends BaseController{
 	
 
 	/**
-	 * Creamos la conexión a la base de datos de mongoDB
+	 * Creamos la conexiï¿½n a la base de datos de mongoDB
 	 * @return Devolvemos el cliente Mongo para poder usar la base de datos
 	 * @throws UnknownHostException
 	 */
@@ -43,7 +43,7 @@ public class Util extends BaseController{
 
 	
 	/**
-	 * Función para devolver la lista de jugadores que han jugado en el día
+	 * Funciï¿½n para devolver la lista de jugadores que han jugado en el dï¿½a
 	 * @return Devolvemos lista de los idJugadores
 	 * @throws IOException
 	 */

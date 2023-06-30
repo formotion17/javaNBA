@@ -61,7 +61,7 @@ public class ClasePartido {
 	private String hora = "";
 	
 	/**
-	 * Año del partido
+	 * Aï¿½o del partido
 	 */
 	private String year = "";
 	
@@ -81,7 +81,7 @@ public class ClasePartido {
 	private String ubicacion = "";
 	
 	/**
-	 * Número de cambios de lider en el aprtido
+	 * Nï¿½mero de cambios de lider en el aprtido
 	 */
 	private String cambiosLider = "";
 	
@@ -100,4 +100,9 @@ public class ClasePartido {
 	 */
 	private boolean playOff = false;
 
+	
+	/**
+	 * NÃºmero de cuartos del partido
+	 */
+	private Integer numeroCuartos = 0;
 }

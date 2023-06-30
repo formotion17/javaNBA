@@ -28,9 +28,9 @@ public class MapJugadorEstadisticas extends Atributos{
 			match.setYear((String) partido.get(ATRIBUTO_PARTIDO_YEAR));
 			match.setPlayOff((boolean) partido.get(ATRIBUTO_PARTIDO_PLAYOFF));
 			System.out.println(match.getDia()+" / "+match.getMes()+" / "+match.getYear()+" Contrario: "+contrario);
-			if(ATRIBUTO_PARTIDO_VISITANTE.equals(contrario)) {
+			if(ATRIBUTO_VISITANTE.equals(contrario)) {
 				match.setEquipoVisitante(rellenarEquipoJugadorEstadistica((Document)partido.get(ATRIBUTO_PARTIDO_EQUIPO_VISITANTE),id)); //EquipoVisitante
-			}else if(ATRIBUTO_PARTIDO_LOCAL.equals(contrario)) {
+			}else if(ATRIBUTO_LOCAL.equals(contrario)) {
 				match.setEquipoLocal(rellenarEquipoJugadorEstadistica((Document)partido.get(ATRIBUTO_PARTIDO_EQUIPO_LOCAL),id));	//EquipoLocal
 			}
 		

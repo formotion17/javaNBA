@@ -118,7 +118,7 @@ public class Atributos {
 	protected static String ATRIBUTO_FULLBOX_SEGUNDO_TIRO_LIBRE_FUERA="segundoTiroLibreFuera";
 	protected static String ATRIBUTO_FULLBOX_SEGUNDO_TIRO_LIBRE_PORCENTAJE="segundoTiroLibrePorcentaje";
 	protected static String ATRIBUTO_FULLBOX_SEGUNDO_TIRO_LIBRE_TOTAL="segundoTiroLibreTotal";
-	protected static String ATRIBUTO_FULLBOX_SUSPENSION="suspensión";
+	protected static String ATRIBUTO_FULLBOX_SUSPENSION="suspensiï¿½n";
 	protected static String ATRIBUTO_FULLBOX_SUSPENSION_FALLADA="suspensionFallada";
 	protected static String ATRIBUTO_FULLBOX_TAPON_RECIBIDO="taponRecibido";
 	protected static String ATRIBUTO_FULLBOX_TAPON_RECIBIDO_TRIPLE="taponRecibidoTriple";
@@ -231,7 +231,7 @@ public class Atributos {
 	protected static String ATRIBUTO_STAT_PTS="PTS";
 	
 	//Atritubos claseJugadorTiros
-	protected static String ATRIBUTO_JUGTIRO_PLAYOFF="playoff";
+	protected static String ATRIBUTO_JUGTIRO_PLAYOFF="playOff";
 	protected static String ATRIBUTO_JUGTIRO_DIA="dia";
 	protected static String ATRIBUTO_JUGTIRO_MES="mes";
 	protected static String ATRIBUTO_JUGTIRO_YEAR="year";
@@ -282,6 +282,8 @@ public class Atributos {
 	
 	protected static String TIPO_RESULTADO_MEDIA="media";
 	protected static String TIPO_RESULTADO_TOTAL="total";
+	protected static String ATRIBUTO_LOCAL="local";
+	protected static String ATRIBUTO_VISITANTE="visitante";
 	
 	protected static String EQUIPOLOCAL_JUGADORES_ID="equipoLocal.jugadores.id";
 	protected static String EQUIPOLOCAL_JUGADORES_NOMBRE="equipoLocal.jugadores.nombre";

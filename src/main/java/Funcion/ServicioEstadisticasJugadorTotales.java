@@ -17,7 +17,7 @@ import Mapper.MapJugadorEstadisticas;
 import Modelo.ClasePartido;
 import Utilidad.Util;
 
-public class EstadisticasJugadorTotales extends BaseController {
+public class ServicioEstadisticasJugadorTotales extends BaseController {
 
 	public static void main(String[] args) throws IOException {
 		long inicio = System.currentTimeMillis();
@@ -76,8 +76,7 @@ public class EstadisticasJugadorTotales extends BaseController {
 
 				if (!listaPartidos.isEmpty()) {
 					System.out.println("############################################################################");
-					System.out.println(
-							" TEMPORADA: " + t.toString() + " tiene " + listaPartidos.size() + " partidos para " + id);
+					System.out.println(" TEMPORADA: " + t.toString() + " tiene " + listaPartidos.size() + " partidos para " + id);
 					System.out.println("############################################################################");
 
 					for (int i = 0; i < listaPartidos.size(); i++) {
@@ -211,7 +210,7 @@ public class EstadisticasJugadorTotales extends BaseController {
 					getEstadisticasTemporadaCarrera().getBoxscore().calcularPorcentajes();
 
 					/**
-					 * Insertamos los documentos en la colección de Totales
+					 * Insertamos los documentos en la colecciï¿½n de Totales
 					 */
 					MongoCollection<Document> insert = db.getCollection(COLECCION_TOTALES);
 
@@ -266,7 +265,7 @@ public class EstadisticasJugadorTotales extends BaseController {
 		//		CONECTAMOS A MONGODB		
 		MongoClient mongo = Util.crearConexion();
 		
-		MongoDatabase db = mongo.getDatabase("nba");
+		MongoDatabase db = mongo.getDatabase("NBA");
 		// TODO Auto-generated method stub
 		MongoCollection<Document> collection = db.getCollection("totales");
 		
