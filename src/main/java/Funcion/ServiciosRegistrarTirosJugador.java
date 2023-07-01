@@ -19,7 +19,7 @@ import Modelo.ClaseJugadorDatos;
 import Modelo.ClaseJugadorTiros;
 import Utilidad.Util;
 
-public class RegistrarTirosJugador extends BaseController{
+public class ServiciosRegistrarTirosJugador extends BaseController{
 	
 	private static GuardarTirosJugador guardarTirosJugador = new GuardarTirosJugador();
 

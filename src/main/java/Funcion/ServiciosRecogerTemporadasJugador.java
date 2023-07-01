@@ -1,6 +1,7 @@
 package Funcion;
 
 import java.net.UnknownHostException;
+
 import java.util.List;
 
 import com.mongodb.BasicDBObject;
@@ -11,10 +12,14 @@ import com.mongodb.client.MongoDatabase;
 import Controlador.BaseController;
 import Utilidad.Util;
 
-public class RecogerTemporadasJugador extends BaseController{
+/**
+ * Recoge las temporadas que ha jugado un jugador
+ */
+
+public class ServiciosRecogerTemporadasJugador extends BaseController{
 	
 	public static void main(String[] args) throws UnknownHostException {
-		System.out.println("INICIAMOS LA APLICACIÓN PARA RECOGER LAS DIFERENTES TEMPORADAS DE UN JUGADOR");
+		System.out.println("INICIAMOS LA APLICACIï¿½N PARA RECOGER LAS DIFERENTES TEMPORADAS DE UN JUGADOR");
 		
 		// CONECTAMOS A MONGODB
 		MongoClient mongo = Util.crearConexion();

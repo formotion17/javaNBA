@@ -1,7 +1,7 @@
 package Funcion;
 
 /**
- * Clase para actualizar las estadisticas de los jugadores que han jugado este día
+ * Clase para actualizar las estadisticas de los jugadores que han jugado este dia
  */
 
 import java.io.File;
@@ -27,10 +27,10 @@ import Modelo.ClaseJugadorTiros;
 import Modelo.ClasePartido;
 
 
-public class EstadisticasJugadorDiaria extends BaseController{
+public class ServicioEstadisticasJugadorDiaria extends BaseController{
 	
 	private static MongoDatabase db;
-	private static String temporada = "season20212022";
+	private static String temporada = "season20222023";
 	private static GuardarTirosJugador guardarTirosJugador = new GuardarTirosJugador();
 	
 	
@@ -236,7 +236,7 @@ public class EstadisticasJugadorDiaria extends BaseController{
 	
 					
 					/**
-					 * Insertamos los documentos en la colección de Totales
+					 * Insertamos los documentos en la colecciï¿½n de Totales
 					 */
 					MongoCollection<Document> insert = db.getCollection(COLECCION_TOTALES);
 					
@@ -397,7 +397,7 @@ public class EstadisticasJugadorDiaria extends BaseController{
 	}
 
 	private static void borrarArchivoId() {
-		File fichero = new File("E://Programacion//pruebasMaven//NBAMongo//nuevosId.txt");
+		File fichero = new File("/Users/formotion/tfg/java/archivos/actualizarJugadores.txt");
 		if (fichero.delete())
 			   System.out.println("El fichero ha sido borrado satisfactoriamente");
 			else

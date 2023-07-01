@@ -18,7 +18,7 @@ public class Util extends BaseController{
 	 */
 	public static ArrayList<String> recogerJugadores() throws IOException{
 		ArrayList<String> listaJugadores = new ArrayList<>();
-		BufferedReader readerJugadores = new BufferedReader(new FileReader("/Users/formotion/tfg/java/archivos/idJugadores.txt"));
+		BufferedReader readerJugadores = new BufferedReader(new FileReader("/Users/formotion/tfg/java/archivos/idJugadoresOrdenados.txt"));
 	    String lineJugadores;
 	    while ((lineJugadores = readerJugadores.readLine()) != null)
 	    {
@@ -49,7 +49,7 @@ public class Util extends BaseController{
 	 */
 	public static ArrayList<String> recogerJugadoresDiaria() throws IOException {
 		ArrayList<String> listaJugadores = new ArrayList<>();
-		BufferedReader readerJugadores = new BufferedReader(new FileReader("E://Programacion//pruebasMaven//NBAMongo//nuevosId.txt"));
+		BufferedReader readerJugadores = new BufferedReader(new FileReader("/Users/formotion/tfg/java/archivos/actualizarJugadores.txt"));
 	    String lineJugadores;
 	    while ((lineJugadores = readerJugadores.readLine()) != null)
 	    {
