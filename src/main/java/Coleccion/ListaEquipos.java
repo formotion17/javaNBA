@@ -55,7 +55,7 @@ public enum ListaEquipos {
 			"rgb(200, 16, 46)",
 			Atributos.CONFERENCIA_ESTE,Atributos.DIVISION_CENTRAL,Atributos.CONFERENCIA_ESTE,Atributos.DIVISION_CENTRAL),
 	GOLDENSTATEWARRIORS(
-			"Golde State Warriors","gsw",
+			"Golden State Warriors","gsw",
 			"https://d2p3bygnnzw9w3.cloudfront.net/req/202002101/tlogo/bbr/GSW.png",0,
 			"rgb(29, 66, 1382)",
 			Atributos.CONFERENCIA_OESTE,Atributos.DIVISION_PACIFICO,Atributos.CONFERENCIA_OESTE,Atributos.DIVISION_PACIFICO),
@@ -95,7 +95,7 @@ public enum ListaEquipos {
 			"rgb(0, 71, 27)",
 			Atributos.CONFERENCIA_ESTE,Atributos.DIVISION_CENTRAL,Atributos.CONFERENCIA_ESTE,Atributos.DIVISION_CENTRAL),
 	MINNESOTATIMBERWOLVES(
-			"Minesota Timberwolves","min",
+			"Minnesota Timberwolves","min",
 			"https://d2p3bygnnzw9w3.cloudfront.net/req/202002101/tlogo/bbr/MIN.png",0,
 			"rgb(12, 35, 64)",
 			Atributos.CONFERENCIA_OESTE,Atributos.DIVISION_MEDIO_OESTE,Atributos.CONFERENCIA_OESTE,Atributos.DIVISION_NOROESTE),
@@ -115,7 +115,7 @@ public enum ListaEquipos {
 			"rgb(0, 22, 65)",
 			"","",Atributos.CONFERENCIA_OESTE,Atributos.DIVISION_SUROESTE),
 	NEWORLEANSOKLAHOMACITYHORNETS(
-			"Oklahoma City Hornets","nop",
+			"New Orleans Oklahoma City Hornets","nop",
 			"https://d2p3bygnnzw9w3.cloudfront.net/req/202002101/tlogo/bbr/NOH.png",4,
 			"rgb(0, 22, 65)",
 			"","",Atributos.CONFERENCIA_OESTE,Atributos.DIVISION_SUROESTE),
@@ -160,7 +160,7 @@ public enum ListaEquipos {
 			"rgb(196, 206, 211)",
 			Atributos.CONFERENCIA_OESTE,Atributos.DIVISION_MEDIO_OESTE,Atributos.CONFERENCIA_OESTE,Atributos.DIVISION_SUROESTE),
 	SEATTLESUPERSONICS(
-			"Seattle Super Sonics","sea",
+			"Seattle SuperSonics","sea",
 			"https://d2p3bygnnzw9w3.cloudfront.net/req/202002101/tlogo/bbr/OKC.png",5,
 			"rgb(0,101,58 ho)",
 			Atributos.CONFERENCIA_OESTE,Atributos.DIVISION_PACIFICO,Atributos.CONFERENCIA_OESTE,Atributos.DIVISION_NOROESTE),
@@ -180,7 +180,7 @@ public enum ListaEquipos {
 			"rgb(93, 118, 169)",
 			Atributos.CONFERENCIA_OESTE,Atributos.DIVISION_MEDIO_OESTE,"",""),
 	WASHINGTONWIZARDS(
-			"Washington Wizars","was",
+			"Washington Wizards","was",
 			"https://d2p3bygnnzw9w3.cloudfront.net/req/202002101/tlogo/bbr/WAS.png",0,
 			"rgb(0, 43, 92)",
 			Atributos.CONFERENCIA_ESTE,Atributos.DIVISION_ATLANTICO,Atributos.CONFERENCIA_ESTE,Atributos.DIVISION_SURESTE);
@@ -254,4 +254,42 @@ public enum ListaEquipos {
         }
         return "rgb(0, 0, 0)";
     }
+	
+	public static String findConferenciaAntiguaByTeam(String team) {
+		for(ListaEquipos equipo : ListaEquipos.values()) {
+			if(equipo.getNombre().equals(team)) {
+				return equipo.conferenciaAntigua;
+			}
+		}
+		return "";
+	}
+	
+	public static String findDivisionAntiguaByTeam(String team) {
+		for(ListaEquipos equipo : ListaEquipos.values()) {
+			if(equipo.getNombre().equals(team)) {
+				return equipo.divisionAntigua;
+			}
+		}
+		return "";
+	}
+
+	public static String findConferenciaNuevaByTeam(String team) {
+		for(ListaEquipos equipo : ListaEquipos.values()) {
+			if(equipo.getNombre().equals(team)) {
+				return equipo.conferenciaNueva;
+			}
+		}
+		return "";
+	}
+	
+	public static String findDivisionNuevaByTeam(String team) {
+		for(ListaEquipos equipo : ListaEquipos.values()) {
+			if(equipo.getNombre().equals(team)) {
+				return equipo.divisionNueva;
+			}
+		}
+		return "";
+	}
+	
+
 }
