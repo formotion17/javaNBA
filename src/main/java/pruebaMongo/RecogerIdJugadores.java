@@ -40,15 +40,15 @@ public class RecogerIdJugadores {
 			
 			while(c.hasNext()) {
 
-				DB dba = mongo.getDB("nba");
-				DBCollection col =dba.getCollection("partido");
+				DB dba = mongo.getDB("NBA");
+				DBCollection col =dba.getCollection("partidos");
 
 			    BasicDBObject allQuery = new BasicDBObject();
 			    BasicDBObject fields = new BasicDBObject();
 			    List<BasicDBObject> obj = new ArrayList<BasicDBObject>();
 			    
 				String id=c.next();
-				System.out.println(id);
+				//System.out.println(id);
 				
 				obj.add(new BasicDBObject("equipoLocal.jugadores.id", id));
 		        allQuery.put("$and", obj);

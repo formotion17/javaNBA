@@ -289,4 +289,19 @@ public class Atributos {
 	protected static String EQUIPOLOCAL_JUGADORES_NOMBRE="equipoLocal.jugadores.nombre";
 	protected static String EQUIPOLOCAL_JUGADORES_APELLIDO="equipoLocal.jugadores.apellido";
 	
+	public static final String CONFERENCIA_OESTE="oeste";
+	public static final String CONFERENCIA_ESTE="este";
+	public static final String DIVISION_ATLANTICO="atlantico";
+	public static final String DIVISION_CENTRAL="central";
+	public static final String DIVISION_MEDIO_OESTE="medio oeste";
+	public static final String DIVISION_PACIFICO="pacifico";
+	public static final String DIVISION_SURESTE="sureste";
+	public static final String DIVISION_NOROESTE="noroeste";
+	public static final String DIVISION_SUROESTE="suroeste";
+	
+	
+	
+	
+	
+	
 }

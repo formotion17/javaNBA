@@ -74,7 +74,7 @@ public class CalcularMaximosTemporadasAction extends BaseController{
                 
                 // MAXIMOS ANOTADORES
                 ordenarAnotadores();
-                imprimirTop(3,"puntos");
+                imprimirTop(8,"puntos");
                 
                 // MAXIMOS REBOTEADORES
                 ordenarReboteadores();
