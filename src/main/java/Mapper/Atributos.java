@@ -118,7 +118,7 @@ public class Atributos {
 	protected static String ATRIBUTO_FULLBOX_SEGUNDO_TIRO_LIBRE_FUERA="segundoTiroLibreFuera";
 	protected static String ATRIBUTO_FULLBOX_SEGUNDO_TIRO_LIBRE_PORCENTAJE="segundoTiroLibrePorcentaje";
 	protected static String ATRIBUTO_FULLBOX_SEGUNDO_TIRO_LIBRE_TOTAL="segundoTiroLibreTotal";
-	protected static String ATRIBUTO_FULLBOX_SUSPENSION="suspensi�n";
+	protected static String ATRIBUTO_FULLBOX_SUSPENSION="suspensión";
 	protected static String ATRIBUTO_FULLBOX_SUSPENSION_FALLADA="suspensionFallada";
 	protected static String ATRIBUTO_FULLBOX_TAPON_RECIBIDO="taponRecibido";
 	protected static String ATRIBUTO_FULLBOX_TAPON_RECIBIDO_TRIPLE="taponRecibidoTriple";
@@ -298,6 +298,8 @@ public class Atributos {
 	public static final String DIVISION_SURESTE="sureste";
 	public static final String DIVISION_NOROESTE="noroeste";
 	public static final String DIVISION_SUROESTE="suroeste";
+	public static final String DIVISION="division";
+	public static final String CONFERENCIA="conferencia";
 	
 	
 	
