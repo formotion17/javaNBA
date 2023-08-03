@@ -11,11 +11,11 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 
-import Utilidades.Util;
-import collection.Temporadas;
-import controller.BaseController;
-import model.ClaseJugador;
-import model.ClasePartido;
+import Utilidad.Util;
+import Coleccion.Temporadas;
+import Controlador.BaseController;
+import Modelo.ClaseJugador;
+import Modelo.ClasePartido;
 
 
 public class EstadisticasJugadorDiaria extends BaseController{
@@ -227,7 +227,7 @@ public class EstadisticasJugadorDiaria extends BaseController{
 	
 					
 					/**
-					 * Insertamos los documentos en la colección de Totales
+					 * Insertamos los documentos en la colecciï¿½n de Totales
 					 */
 					MongoCollection<Document> insert = db.getCollection("totales");
 					

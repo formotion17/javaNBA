@@ -19,8 +19,8 @@ import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.Aggregates;
 import com.mongodb.client.model.Filters;
 
-import Utilidades.Util;
-import controller.BaseController;
+import Utilidad.Util;
+import Controlador.BaseController;
 
 public class PruebaRecogerJugadorEstadisticas extends BaseController{
 

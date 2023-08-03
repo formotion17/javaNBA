@@ -9,9 +9,9 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 
-import Utilidades.Util;
-import collection.Temporadas;
-import controller.BaseController;
+import Utilidad.Util;
+import Coleccion.Temporadas;
+import Controlador.BaseController;
 
 public class EliminarTemporada extends BaseController{
 
@@ -27,7 +27,7 @@ public class EliminarTemporada extends BaseController{
 				MongoCollection<Document> collection = db.getCollection("partido");
 				
 				for(int i=2000 ;i<2020;i++) {
-					System.out.println("Recojemos el año: "+i);
+					System.out.println("Recojemos el aï¿½o: "+i);
 					Document seasonEliminar = new Document("year",Integer.toString(i));
 //					seasonEliminar.put("mes", "2");
 					
@@ -41,12 +41,12 @@ public class EliminarTemporada extends BaseController{
 						System.out.println("Eliminamos: "+partido.get("temporada")+" "+partido.get("tiempo")+" "+partido.get("tiporesultado")+" "+partido.get("idjugador"));
 						collection.deleteOne(partido);
 					}
-					System.out.println("FINALIZAMOS el año: "+i);
+					System.out.println("FINALIZAMOS el aï¿½o: "+i);
 				}
 				
 			}
 			
-			System.out.println("FINALIZAMOS TODOS LOS AÑOS");
+			System.out.println("FINALIZAMOS TODOS LOS Aï¿½OS");
 		}
 	}
 

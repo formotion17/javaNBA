@@ -19,11 +19,11 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 
-import Utilidades.Util;
-import collection.Temporadas;
-import controller.BaseController;
-import model.ClaseJugadorDatos;
-import model.ClaseJugadorTiros;
+import Utilidad.Util;
+import Coleccion.Temporadas;
+import Controlador.BaseController;
+import Modelo.ClaseJugadorDatos;
+import Modelo.ClaseJugadorTiros;
 
 public class RegistrarTirosJugador extends BaseController{
 	

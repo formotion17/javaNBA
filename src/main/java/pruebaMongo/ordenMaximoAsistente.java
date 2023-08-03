@@ -2,7 +2,7 @@ package pruebaMongo;
 
 import java.util.Comparator;
 
-import model.ClaseJugador;
+import Modelo.ClaseJugador;
 
 public class ordenMaximoAsistente  implements Comparator<ClaseJugador>{
 

@@ -12,7 +12,7 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 
-import Utilidades.Util;
+import Utilidad.Util;
 
 public class AddingDataDocument {
 

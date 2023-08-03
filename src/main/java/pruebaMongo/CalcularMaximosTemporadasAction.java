@@ -19,9 +19,9 @@ import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 
-import Utilidades.Util;
-import collection.ListaEquipos;
-import model.ClaseEstadisticaNormalTotales;
+import Utilidad.Util;
+import Coleccion.ListaEquipos;
+import Modelo.ClaseEstadisticaNormalTotales;
 
 public class CalcularMaximosTemporadasAction {
 	
@@ -37,7 +37,7 @@ public class CalcularMaximosTemporadasAction {
 		
 		if(mongo!=null) {
 			
-				DB db = mongo.getDB("nba");
+				DB db = mongo.getDB("NBA");
 				DBCursor cursor;
 				
 				DBCollection collection =db.getCollection("totales");

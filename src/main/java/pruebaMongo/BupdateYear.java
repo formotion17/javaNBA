@@ -10,10 +10,10 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 
-import Utilidades.Util;
-import controller.BaseController;
-import model.ClaseJugador;
-import model.ClasePartido;
+import Utilidad.Util;
+import Controlador.BaseController;
+import Modelo.ClaseJugador;
+import Modelo.ClasePartido;
 
 public class BupdateYear extends BaseController{
 	
@@ -48,7 +48,7 @@ public class BupdateYear extends BaseController{
 				collection.deleteOne(partido);
 			}
 			
-			// Hacemos la busqueda de la temporada y hacemos insersión de lo nuevo
+			// Hacemos la busqueda de la temporada y hacemos insersiï¿½n de lo nuevo
 			
 				for(String id:getListaJugadores()) {
 					collection = db.getCollection("season20192020");
@@ -167,7 +167,7 @@ public class BupdateYear extends BaseController{
 						getEstadisticasTemporadaTotal().getBoxscore().calcularPorcentajes();		
 						
 						/**
-						 * Insertamos los documentos en la colección de Totales
+						 * Insertamos los documentos en la colecciï¿½n de Totales
 						 */
 						MongoCollection<Document> insert = db.getCollection("totales");
 						

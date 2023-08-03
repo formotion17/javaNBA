@@ -16,15 +16,15 @@ import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.Filters;
 
-import collection.ListaEquipos;
-import model.ClaseEquipo;
-import model.ClaseEstadisticaAvanzada;
-import model.ClaseEstadisticaNormal;
-import model.ClaseFullBoxscore;
-import model.ClaseJugador;
-import model.ClasePartido;
-import model.ClaseTanteoCuartos;
-import model.ClaseTiros;
+import Coleccion.ListaEquipos;
+import Modelo.ClaseEquipo;
+import Modelo.ClaseEstadisticaAvanzada;
+import Modelo.ClaseEstadisticaNormal;
+import Modelo.ClaseFullBoxscore;
+import Modelo.ClaseJugador;
+import Modelo.ClasePartido;
+import Modelo.ClaseTanteoCuartos;
+import Modelo.ClaseTiros;
 
 public class PartidosDelDia {
 	

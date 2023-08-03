@@ -10,9 +10,9 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 
-import Utilidades.Util;
-import controller.BaseController;
-import model.ClaseEstadisticaNormalTotales;
+import Utilidad.Util;
+import Controlador.BaseController;
+import Modelo.ClaseEstadisticaNormalTotales;
 
 public class RecogerTotalesJugadores extends BaseController{
 

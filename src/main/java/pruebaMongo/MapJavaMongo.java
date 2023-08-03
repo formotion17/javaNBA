@@ -4,14 +4,14 @@ import java.util.ArrayList;
 
 import org.bson.Document;
 
-import model.ClaseEquipo;
-import model.ClaseEstadisticaAvanzada;
-import model.ClaseEstadisticaNormal;
-import model.ClaseFullBoxscore;
-import model.ClaseJugador;
-import model.ClasePartido;
-import model.ClaseTanteoCuartos;
-import model.ClaseTiros;
+import Modelo.ClaseEquipo;
+import Modelo.ClaseEstadisticaAvanzada;
+import Modelo.ClaseEstadisticaNormal;
+import Modelo.ClaseFullBoxscore;
+import Modelo.ClaseJugador;
+import Modelo.ClasePartido;
+import Modelo.ClaseTanteoCuartos;
+import Modelo.ClaseTiros;
 
 /**
  * Clase en la que vamos a convertir los Documentos que nos devuelve MongoDB en clases Java
@@ -147,7 +147,7 @@ public class MapJavaMongo {
 			full.setSegundoTiroLibreFuera((Integer)box.get("segundoTiroLibreFuera"));
 			full.setSegundoTiroLibrePorcentaje((Double)revisarDatoIntegerDouble(box.get("segundoTiroLibrePorcentaje")));
 			full.setSegundoTiroLibreTotal((Integer)box.get("segundoTiroLibreTotal"));
-			full.setSuspension((Integer)box.get("suspensión"));
+			full.setSuspension((Integer)box.get("suspensiï¿½n"));
 			full.setSuspensionFallado((Integer)box.get("suspensionFallada"));
 			full.setTaponRecibido((Integer)box.get("taponRecibido"));
 			full.setTaponRecibidoTriple((Integer)box.get("taponRecibidoTriple"));

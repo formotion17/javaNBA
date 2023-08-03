@@ -11,8 +11,8 @@ import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
 
-import Utilidades.Util;
-import controller.BaseController;
+import Utilidad.Util;
+import Controlador.BaseController;
 
 public class EstadisticasJugadorContraEquipo extends BaseController{
 	

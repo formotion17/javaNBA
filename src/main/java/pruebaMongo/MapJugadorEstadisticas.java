@@ -4,17 +4,17 @@ import java.util.ArrayList;
 
 import org.bson.Document;
 
-import collection.Temporadas;
-import model.ClaseEquipo;
-import model.ClaseEstadisticaAvanzada;
-import model.ClaseEstadisticaNormal;
-import model.ClaseEstadisticaNormalTotales;
-import model.ClaseFullBoxscore;
-import model.ClaseJugador;
-import model.ClaseJugadorTiros;
-import model.ClasePartido;
-import model.ClaseTanteoCuartos;
-import model.ClaseTiros;
+import Coleccion.Temporadas;
+import Modelo.ClaseEquipo;
+import Modelo.ClaseEstadisticaAvanzada;
+import Modelo.ClaseEstadisticaNormal;
+import Modelo.ClaseEstadisticaNormalTotales;
+import Modelo.ClaseFullBoxscore;
+import Modelo.ClaseJugador;
+import Modelo.ClaseJugadorTiros;
+import Modelo.ClasePartido;
+import Modelo.ClaseTanteoCuartos;
+import Modelo.ClaseTiros;
 
 public class MapJugadorEstadisticas {
 
@@ -202,7 +202,7 @@ public class MapJugadorEstadisticas {
 			full.setSegundoTiroLibreFuera((Integer)box.get("segundoTiroLibreFuera"));
 			full.setSegundoTiroLibrePorcentaje((Double)revisarDatoIntegerDouble(box.get("segundoTiroLibrePorcentaje")));
 			full.setSegundoTiroLibreTotal((Integer)box.get("segundoTiroLibreTotal"));
-			full.setSuspension((Integer)box.get("suspensión"));
+			full.setSuspension((Integer)box.get("suspensiï¿½n"));
 			full.setSuspensionFallado((Integer)box.get("suspensionFallada"));
 			full.setTaponRecibido((Integer)box.get("taponRecibido"));
 			full.setTaponRecibidoTriple((Integer)box.get("taponRecibidoTriple"));
@@ -262,7 +262,7 @@ public class MapJugadorEstadisticas {
 	
 	public static ClaseEstadisticaNormalTotales devolverEstadisticasTotalesJugador(Document stats) {
 		ClaseEstadisticaNormalTotales total = new ClaseEstadisticaNormalTotales();
-			total.setIdJugador((String)stats.get("idjugador"));
+			total.setIdJugador((String)stats.get("idJugador"));
 			total.setTemporada((String)stats.get("temporada"));
 			total.setTiempo((String)stats.get("tiempo"));
 			total.setTiempo((String)stats.get("tiporesultado"));
