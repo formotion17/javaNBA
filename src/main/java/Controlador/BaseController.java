@@ -120,6 +120,8 @@ public class BaseController extends Atributos{
 		Document info = new Document();
 		
 		info.put(ATRIBUTO_ID_JUGADOR, id);
+		info.put(ATRIBUTO_JUGADOR_NOMBRE, jugador.getNombre());
+		info.put(ATRIBUTO_JUGADOR_APELLIDO, jugador.getApellido());
 		info.put(ATRIBUTO_TEMPORADA, temporada);
 		info.put(ATRIBUTO_TIEMPO,tiempo);
 		info.put(ATRIBUTO_TIPO_RESULTADO,TIPO_RESULTADO_TOTAL);
@@ -170,6 +172,8 @@ public class BaseController extends Atributos{
 		
 		Document info = new Document();
 		info.put(ATRIBUTO_ID_JUGADOR, id);
+		info.put(ATRIBUTO_JUGADOR_NOMBRE, jugador.getNombre());
+		info.put(ATRIBUTO_JUGADOR_APELLIDO, jugador.getApellido());
 		info.put(ATRIBUTO_TEMPORADA, temporada);
 		info.put(ATRIBUTO_TIEMPO,tiempo);
 		info.put(ATRIBUTO_TIPO_RESULTADO,TIPO_RESULTADO_MEDIA);
@@ -293,6 +297,8 @@ public class BaseController extends Atributos{
 	 * @param box
 	 */
 	public static void rellenarJugador(ClaseJugador jugador, ClaseJugador box) {
+		jugador.setNombre(box.getNombre());
+		jugador.setApellido(box.getApellido());
 		jugador.getBoxscore().setPuntos(box.getBoxscore().getPuntos()+jugador.getBoxscore().getPuntos());
 		jugador.getBoxscore().setFaltasPersonales(box.getBoxscore().getFaltasPersonales()+jugador.getBoxscore().getFaltasPersonales());
 		jugador.getBoxscore().setPerdidas(box.getBoxscore().getPerdidas()+jugador.getBoxscore().getPerdidas());

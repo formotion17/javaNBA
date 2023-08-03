@@ -67,6 +67,8 @@ public class MapJugadorEstadisticas extends Atributos{
 		ClaseJugador jugador = new ClaseJugador();
 		
 		if(id.equals((String) player.get(ATRIBUTO_JUGADOR_ID))) {
+			jugador.setNombre((String)player.get("nombre"));
+			jugador.setApellido((String)player.getString("apellido"));
 			jugador.setBoxscore(devolverEstadisticaNormal((Document) player.get(ATRIBUTO_JUGADOR_BOXSCORE))); // BoxScore
 			jugador.addCuartoJugador(devolverFullBox((Document)player.get(ATRIBUTO_JUGADOR_CUARTO1))); // Cuartos	
 			jugador.addCuartoJugador(devolverFullBox((Document)player.get(ATRIBUTO_JUGADOR_CUARTO2)));
